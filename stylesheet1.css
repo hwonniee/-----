@@ -1,4 +1,4 @@
-body {
+body, pre {
     background-color: white;
     margin: 20px;
     line-height: 26px;
@@ -12,6 +12,9 @@ body {
     position: relative;
     overflow: auto;
 }
+
+
+
 
 #login {
     text-align: right;
@@ -77,15 +80,20 @@ body {
     
 }
 
-
-#ksh{
-    width: 700px;
-    height: 500px;
+#wale-영기{
+    float: left;
+    clear:both;
 }
 
+#wale-혜원{
+    float: right;
+    clear: both;
+}
+
+
 #history{
-    text-align: center;
-    margin: 30px;
+    
+    
 }
 
 #td-bord{
@@ -123,6 +131,13 @@ body {
     padding-top: 10px;
 }
 
+
+.th-year{
+    width:10%;
+    padding-bottom: 20px;
+    border-bottom: solid gray;
+}
+
 .mini-title1{
     padding-top: 20px;
 }
@@ -150,11 +165,15 @@ body {
     font-weight: bold;
 }
 
-
+.wale-img{
+    width: 350px;
+    height: 430px;
+}
 
 .menuitem{
     background-color: #1b5e20;
     padding: 20px;
+    color: white;
 }
 
 .menuitem1 {
