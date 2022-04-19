@@ -46,7 +46,7 @@ body, pre {
 
 #main-menu{
     padding: 20px 200px 800px ;
-    background-image: url(images/영기\ 건축1.png)
+    background-image: url(images/box.png)
 }
 
 #bottom {
@@ -90,11 +90,6 @@ body, pre {
     clear: both;
 }
 
-
-#history{
-    
-    
-}
 
 #td-bord{
     border-bottom: 2px gray;
@@ -187,11 +182,7 @@ body, pre {
     font-weight: bold;
 }
 
-.menuitem:first-child {
-    background-color:#4CAF50;
-   color: white;
-   font-weight:bold;
-}
+
 
 
 a {
