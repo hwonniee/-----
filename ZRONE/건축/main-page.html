@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>main-page</title>
+    <link rel="stylesheet" type="text/css" href="css/공통.css">
+    <script src="script/main-jquery-1.12.4.js"></script>
+    <script src="script/main-script.js" defer type="text/javascript"></script>
+    <style>
+    #main{
+        padding: 10px;
+        margin: 10px 300px;
+            }
+
+    #main-menu{
+        padding: 20px 200px 800px ;
+        background: url(images/box.png);
+                }
+    
+    #small-menu{
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 20px;
+    margin-top: 40px;
+    }
+
+    #wale-영기{
+        float: left;
+    }
+
+    #wale-혜원{
+        float: right;
+    }
+
+    .wale-img{
+        width: 200px;
+        height: 250px;
+    }
+
+    .small-menuitem{
+        padding: 20px;
+        cursor: pointer;
+        color:#f44336;
+        text-decoration: none;
+        font-weight: 700;
+                    }
+
+    .small-menuitem:hover{
+        text-decoration: underline #f44336 3px;
+        font-weight: bold;
+                        }
+
+
+/*고쳐보자*/
+
+    button {
+        background: none;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        margin: 40px;
+    }
+
+    .tab_wrap {
+        text-align: center;
+    }
+
+    .tab_menu_btn {
+        width: 100px;
+        height: 40px;
+        transition: 0.3s all;
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+        
+    }
+
+    .tab_menu_btn.on {
+        border-bottom: 3px solid #01579b;
+        font-weight: 700;
+        color: #01579b;
+    }
+
+    .tab_menu_btn:hover {
+        color: #01579b;
+    }
+
+    .tab_box {
+        display: none;
+        padding: 20px;
+        background-color: rgba(255,255,255,0.8);
+        width: 700px;
+        height: 500px;
+        margin-left: 25%;
+        }
+
+
+
+    .tab_box_container {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div id="main-menu">
+        <div id="login">
+            <a href="login.html">로그인</a>
+            <a href="회원가입.html">회원가입</a>
+        </div>
+        <div id="top" class="main-top">
+            <h1> <a href="main-page.html">ZERONE</a></h1>
+        </div>
+        <p id="small-menu">
+            <a href="home.html" class="small-menuitem">HOME</a>
+            <div class="tab_wrap">
+                <div class="tab_menu_container">
+                  <button class="tab_menu_btn on" type="button">INTRO</button>
+                  <button class="tab_menu_btn" type="button">PURPOSE</button>
+                  <button class="tab_menu_btn" type="button">CONTRIBUTE</button>
+                  <button class="tab_menu_btn" type="button">GALLERY</button>
+                </div>
+              
+                <div class="tab_box_container">
+                  <div class="tab_box on"><p><h1 style="color: #560027;">ZERONE</h1><br>영기의 '영'인 ZERO와 혜원의 '원'인 ONE을<br>을 합쳐서 만든 프로젝트 명이다.</p></div>
+                  <div class="tab_box"><p>건축과 코딩의 만남<br>아이디어 공유<br>융합 사고</p></div>
+                  <div class="tab_box">
+                    <p><pre>
+                    <img src="images/영기고래.jpg" class="wale-img" id="wale-영기">
+                    이름: 조영기
+                    학교: 동의대학교
+                    학과: 건축학과
+                    기여: 건축
+
+
+                    </pre>
+                    <pre>
+                    <img src="images/혜원고래.jpg" class="wale-img" id="wale-혜원">
+                      이름: 장혜원 
+                      학교: 동의대학교
+                      학과: 경찰행정학과  
+                      기여: 소프트웨어
+                      좋아하는 사람: 조영기
+                      이상형: 조영기
+                    </pre></p>
+                   </div>
+                  <div class="tab_box">
+                      <p>
+                        <div class="contents">
+                            <h3> Automatic Slide Show1 </h3>
+                            <div class="banner">
+                                <ul>
+                                    <li><img src="images/box내부3.jpg" alt="images01"></li>
+                                    <li><img src="images/sample1.jpg" alt="images02"></li>
+                                    <li><img src="images/start.jpg" alt="images03"></li>
+                                    <li><img src="images/한옥4.jpg" alt="images04"></li>
+                                    <li><img src="images/sample3.jpg" alt="images05"></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </p></div>
+                </div>
+              </div>
+        </p>
+    </div>
+</body>
+</html>
+
+ 

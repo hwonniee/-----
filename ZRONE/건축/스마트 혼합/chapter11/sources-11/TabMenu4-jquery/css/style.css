@@ -1,0 +1,45 @@
+body {
+    background-color: Linen;
+}
+
+button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.tab_wrap {
+    text-align: center;
+}
+
+.tab_menu_btn {
+    width: 100px;
+    height: 40px;
+    transition: 0.3s all;
+    font-size: 18px;
+}
+
+.tab_menu_btn.on {
+    border-bottom: 3px solid Gold;
+    font-weight: 700;
+    color: navy;
+}
+
+.tab_menu_btn:hover {
+    color: navy;
+}
+
+.tab_box {
+    display: none;
+    padding: 20px;
+}
+
+.tab_box.on {
+    display: block;
+}
+
+.tab_box_container {
+    font-size: 18px;
+    text-align: center;
+}

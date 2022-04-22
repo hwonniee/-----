@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Menu with </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="script/script.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="w3-container">
+        <h2>Tab Menu with W3.CSS</h2>
+
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openSTEP(event,'national')">HTML5</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openSTEP(event,'citizen')">CSS</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openSTEP(event,'industry')">JavaScript</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openSTEP(event,'training')">W3.CSS</button>
+        </div>
+
+        <div id="national" class="w3-container w3-border STEP">
+            <h2>HTML5</h2>
+            <p>문서의 개체<br>하이퍼 텍스트<br>마크업 언어</p>
+        </div>
+
+        <div id="citizen" class="w3-container w3-border STEP" style="display:none">
+            <h2>CSS</h2>
+            <p>캐스캐이딩<br>스타일 시트<br>디자인 요소</p>
+        </div>
+
+        <div id="industry" class="w3-container w3-border STEP" style="display:none">
+            <h2>JavaScript</h2>
+            <p>웹을 풍부하게 만들어주는<br>상대적으로 가벼운<br>프로그래밍 언어</p>
+        </div>
+        
+        <div id="training" class="w3-container w3-border STEP" style="display:none">
+            <h2>W3.CSS</h2>
+            <p>W3.CSS는 기본적으로 데스크톱, 태블릿 및<br>모바일 디자인을 지원하는 <br> 최신 CSS프레임 워크입니다.</p>
+        </div>
+        
+    </div>
+
+</body></html>

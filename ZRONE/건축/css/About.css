@@ -1,0 +1,76 @@
+
+#top h1 h2{
+    padding-top: 1px;
+    margin: 0;
+}
+
+#top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+#mini-title{
+    text-align: left;
+}
+
+
+#wale-영기{
+    float: left;
+    clear:both;
+}
+
+#wale-혜원{
+    float: right;
+    clear: both;
+}
+
+
+#td-bord{
+    border-bottom: 2px gray;
+    border-collapse: collapse;
+    
+}
+
+
+.th-year{
+    width:10%;
+    padding-bottom: 20px;
+    border-bottom: solid gray;
+}
+
+.mini-title1{
+    padding-top: 20px;
+}
+
+.mini-title2{
+    padding-bottom: 30px;
+}
+
+.intro-index{
+    text-align: center;
+    color: #616161;
+    margin: 30px;
+
+}
+
+
+
+.wale-img{
+    width: 350px;
+    height: 430px;
+}
+
+
+
+.menuitem1 {
+    list-style-type: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+

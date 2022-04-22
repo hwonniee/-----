@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tab Menu with JavaScript</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="script/script.js" defer type="text/javascript"></script>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('national', this, 'DarkGreen')"  id="defaultOpen">HTML5</button>
+<button class="tablink" onclick="openPage('citizen', this, 'Navy')">CSS</button>
+<button class="tablink" onclick="openPage('industry', this, 'Maroon')">JavaCript</button>
+<button class="tablink" onclick="openPage('training', this, 'Indigo')">W3.CSS</button>
+
+<div id="national" class="tabcontent">
+  <h3>HTML5</h3>
+  <p>문서의 개체<br>하이퍼 텍스트<br>마크업 언어</p>
+</div>
+
+<div id="citizen" class="tabcontent">
+  <h3>CSS</h3>
+  <p>캐스캐이딩<br>스타일 시트<br>디자인 요소</p>
+</div>
+
+<div id="industry" class="tabcontent">
+  <h3>JavaScript</h3>
+  <p>웹을 풍부하게 만들어주는<br>상대적으로 가벼운<br>프로그래밍 언어</p>
+</div>
+
+<div id="training" class="tabcontent">
+  <h3>W3.CSS</h3>
+  <p>W3.CSS는 기본적으로 데스크톱, 태블릿 및<br>모바일 디자인을 지원하는 <br> 최신 CSS프레임 워크입니다.</p>
+</div>
+   
+</body>
+</html> 

@@ -1,0 +1,38 @@
+/*Modal Layer Popup*/
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+	width:100%;
+	background-color:#ffffff;
+	font-size:18px;
+}
+
+
+.open-popup {
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 800px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.modal-contents {
+    margin-top: 100px;
+    background-color: #fff;
+    width: 600px;
+    text-align: center;
+}
+
+.close-popup {
+    cursor: pointer;
+}
