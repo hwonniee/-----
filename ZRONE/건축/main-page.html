@@ -7,17 +7,15 @@
     <script src="script/main-jquery-1.12.4.js"></script>
     <script src="script/main-script.js" defer type="text/javascript"></script>
     <style>
-    #container{
-       
-                }
-    
-    #small-menu{
-    font-size: 20px;
-    text-align: center;
-    word-spacing: 20px;
-    margin-top: 40px;
-    }
 
+    #main-menu{
+        font-size: 20px;
+        text-align: center;
+        word-spacing: 20px;
+        margin-top: 40px;
+        position: relative;
+        }
+        
     #wale-영기{
         float: left;
     }
@@ -31,86 +29,86 @@
         height: 250px;
     }
 
-    .small-menuitem{
+    .main-menuitem{
         padding: 20px;
         cursor: pointer;
         color:#f44336;
         text-decoration: none;
         font-weight: 700;
-                    }
+        }
 
-    .small-menuitem:hover{
+    .main-menuitem:hover{
         text-decoration: underline #f44336 3px;
         font-weight: bold;
                         }
 
 
 
-/*background slide-show css*/
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+    /*background slide-show css*/
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: 0 auto;
-  size: cover;
- }
+    /* Slideshow container */
+    .slideshow-container {
+    position: absolute;
+    margin: 0 auto;
+    size: cover;
+    }
 
-/* Caption text 
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-*/
-/*Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    /* Caption text 
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+    */
+    /*Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-display: inline-block;
-  transition: background-color 0.6s ease;
-}
+    /* The dots/bullets/indicators */
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
 
-.active {
-  background-color: #717171;
-}
+    .active {
+    background-color: #717171;
+    }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
 
 /* On smaller screens, decrease text size 
 @media only screen and (max-width: 300px) {
@@ -169,7 +167,7 @@ display: inline-block;
         text-align: center;
     }
 
-
+ 
     </style>
 </head>
 <body>
@@ -179,18 +177,18 @@ display: inline-block;
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="images/box.png" style="width:100%">
-                </div>
+            </div>
     
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div> 
                  <img src="images/start.jpg" style="width:100%">
-                </div>
+            </div>
     
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div> 
                 <img src="images/한옥1.jpg" style="width:100%">
-                </div>
             </div>
+        </div>
             <br>
 
             <div style="text-align:center">
@@ -211,8 +209,8 @@ display: inline-block;
         </div>
 
         <!--메인메뉴-->
-        <p id="small-menu">
-            <a href="home.html" class="small-menuitem">HOME</a>
+        <div id="main-menu">
+            <a href="home.html" class="main-menuitem">HOME</a>
             <div class="tab_wrap">
                 <div class="tab_menu_container">
                   <button class="tab_menu_btn on" type="button">INTRO</button>
@@ -225,7 +223,7 @@ display: inline-block;
                   <div class="tab_box on"><p><h1 style="color: #560027;">ZERONE</h1><br>영기의 '영'인 ZERO와 혜원의 '원'인 ONE을<br>을 합쳐서 만든 프로젝트 명이다.</p></div>
                   <div class="tab_box"><p>건축과 코딩의 만남<br>아이디어 공유<br>융합 사고</p></div>
                   <div class="tab_box">
-                    <p><pre>
+                    <pre>
                     <img src="images/영기고래.jpg" class="wale-img" id="wale-영기">
                     이름: 조영기
                     학교: 동의대학교
@@ -242,28 +240,29 @@ display: inline-block;
                       기여: 소프트웨어
                       좋아하는 사람: 조영기
                       이상형: 조영기
-                    </pre></p>
-                   </div>
+                    </pre>
+                  </div>
+                  
                   <div class="tab_box">
-                      <p>
-                        <div class="contents">
-                            <h3> Automatic Slide Show1 </h3>
-                            <div class="banner">
-                                <ul>
-                                    <li><img src="images/box내부3.jpg" alt="images01"></li>
-                                    <li><img src="images/sample1.jpg" alt="images02"></li>
-                                    <li><img src="images/start.jpg" alt="images03"></li>
-                                    <li><img src="images/한옥4.jpg" alt="images04"></li>
-                                    <li><img src="images/sample3.jpg" alt="images05"></li>
-                                </ul>
+                    <p>
+                      <div class="contents">
+                          <h3> Automatic Slide Show1 </h3>
+                          <div class="banner">
+                              <ul>
+                                  <li><img src="images/box내부3.jpg" alt="images01"></li>
+                                  <li><img src="images/sample1.jpg" alt="images02"></li>
+                                  <li><img src="images/start.jpg" alt="images03"></li>
+                                  <li><img src="images/한옥4.jpg" alt="images04"></li>
+                                  <li><img src="images/sample3.jpg" alt="images05"></li>
+                              </ul>
                             </div>
                         </div>
-                      </p></div>
+                    </p>
                 </div>
-              </div>
-        </p>
+        </div>
+                   
     </div>
-</body>
+   
 </html>
 
  
