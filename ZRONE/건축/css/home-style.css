@@ -4,7 +4,6 @@
 	margin:0 auto;
 	padding:0;
 	list-style:none;
-	font-family:"맑은 고딕";
 	color:#333333;
 }
 body{
@@ -40,9 +39,10 @@ header{
 
 .menu{           
 	float:right;
-	height:100x; 
+	height:150px; 
 	width:800px; 
 	z-index:1;  
+	margin-top: -75px;
 }
 .navi{           
 	float:right;
@@ -52,18 +52,20 @@ header{
 .navi>li{        
 	float:left;
 }
-.navi>li>a{      
+.navi>li>a{
+	border-bottom:solid 2px #ababab;      
 	height:40x;
 	width:180px;
 	line-height:40px; 
 	font-size:16px;
 	font-weight:bold;
 	text-align:center;
-	background-color:#ababab;
-	color:#ffffff; 
+	background-color:none;
+	color:#333333; 
 }
 .navi>li>a:hover{ 
-	background-color:#30a3f3; 
+	color: black;
+	border-top: solid 2px black;
 }
 .submenu{        
 	width:180px;
@@ -303,22 +305,19 @@ header{
 }
 footer{
 	margin-top: 100PX;
-	height:100px;
 	width:1200px;
-	background-color:#ababab;
 }
-.bottomLogo{         
-	float:left;
-	height:100px;
-	width:250px; 
-}
-.bottomlogo img{     
-	float:left;
-	height:42px;
-	width:180px;
-	margin-top:30px;
-	margin-left:25px;
-}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 20px;
+	border-radius: 4PX;
+	height: 40PX;}
+
 .footerRight{   
 	float:right;
 	height:100px; 
@@ -342,14 +341,7 @@ footer{
 .footerMenu li:hover{
     font-weight:bold;
 }
-.copyright{
-	height:50px;  
-	width:600px;  
-    text-align:center;
-    font-size:16px;
-    line-height:50px;
-    color: #ffffff;
-}
+
 .sns {
     position: absolute;
     top: 640px;
