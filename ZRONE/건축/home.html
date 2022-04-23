@@ -1,29 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>home</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/공통.css">
+<meta charset="utf-8">
+<title>ZERONE</title>
+<link href="css/home-style.css" type="text/css" rel="stylesheet">
+<script src="script/home-jquery-1.12.4.js"></script>
+<script src="script/home-script.js" defer type="text/javascript"></script>
 </head>
+
 <body>
-    
-    <div id="login">
-        <a href="login.html">로그인</a>
-        <a href="회원가입.html">회원가입</a>
-      </div>
-<div class="grid-container">
-  <div class="item1">
-    <div id="top">
-        <h1><a href="main-page.html">ZERONE</a></h1>
-    </div>
-    <hr>
+
+<!--==== A. header 시작 ====-->
+<header>
+<div class="top">
+  <div class="logo">
+         <!--로그인, 회원가입 -->
+         <div id="main-text">
+          <div id="login">
+              <a href="login.html">로그인</a>
+              <a href="회원가입.html">회원가입</a>
+          </div>
+
+          <!-- 로고 -->
+          <div id="title" class="main-title">
+              <h1> <a href="main-page.html">ZERONE</a></h1>
+          </div>
+      
   </div>
-  <div class="item2">Main</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
+  <nav class="menu">
+  <ul class="navi">
+    <li><a href="#">ZERONE</a>
+      <ul class="submenu">
+        <li><a href="#">ZERONE 소개</a></li>
+        <li><a href="#">인사말</a></li>
+        <li><a href="#">오시는길</a></li>
+      </ul>
+    </li>
+    <li><a href="#">PROJECT</a>
+      <ul class="submenu">
+        <li><a href="#">프로그램</a></li>
+        <li><a href="#">관람시간표</a></li>
+        <li><a href="#">이달의 별자리</a></li>
+      </ul>
+    </li>
+    <li><a href="#">RESERVATION</a>
+      <ul class="submenu">
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">예약확인</a></li>
+        <li><a href="#">예약취소</a></li>
+      </ul>
+    </li>
+    <li><a href="#">COMMUNITY</a>
+      <ul class="submenu">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">방문후기</a></li>
+        <li><a href="#">자유게시판</a></li>
+      </ul>
+    </li>
+  </ul>
+  </nav>
 </div>
+</header>
+<!--==== A. header 끝 ====-->
+
+<!--==== B. Slide/C. Contents 시작 ====-->
+<div class="wrap">
+<!--==== B. Slide 시작 ====-->
+<div class="imageSlide">
+  <a href="#">
+  <img src="images/한옥3 배너.jpg" alt="한옥공모전">     
+  <span class="imgtext">한옥공모전</span>
+  </a>
+  
+  <a href="#">
+  <img src="images/box내부2.jpg" alt="box">     
+  <span class="imgtext">BOXES IN A BOX</span>                     
+  </a>
+  
+  <a href="#">
+  <img src="images/start도면2.jpg" alt="이미지3">     
+  <span class="imgtext">START TREE</span>                     
+  </a>
+</div>
+<!--==== C. Contents 시작 ====-->
+<div class="contents">
+  <ul class="tabmenu">
+    <li class="active"><a href="#">공지사항</a>
+    <div class="notice">
+    <ul>
+      <li><a href="#">모델하우스 방문방법
+      <span>2020.07.13</span></a></li>
+      <li><a href="#">무료상담
+      <span>2020.07.13</span></a></li>
+      <li><a href="#">임시휴관으로 인한 환불안내
+      <span>2020.07.13</span></a></li>
+      <li><a href="#">코로나19로 인한 임시휴관
+      <span>2022.05.01</span></a></li>
+    </ul>
+    </div>
+    </li>
+    <li><a href="#">갤러리</a>
+    <div class="gallery">
+    <ul>
+      <li><a href="#"><img src="images/한옥 스케치1.JPG" alt="갤러리1"></a></li>
+      <li><a href="#"><img src="images/9m-주택 모형1.jpg" alt="갤러리2"></a></li>
+      <li><a href="#"><img src="images/유치원1.png" alt="갤러리3"></a></li>
+    </ul>
+    </div>
+    </li>
+  </ul>
+  
+  <div class="contentsRight">
+    <div class="banner">
+      <a href="#">
+      <img src="images/유치원2.png" alt="배너">
+      <h4 class="bntext">배너</h4>      
+      </a> 
+    </div>    
+    <div class="shortcut">
+      <a href="#">
+      <img src="images/HYGGE 도면.jpg" alt="바로가기">     
+      <h4 class="shortcutText">바로가기</h4>                     
+      </a>
+    </div>
+  </div>
+</div>
+</div> 
+<!-- B. Slide/C. Contents 끝 -->
+
+<!-- modal 시작 -->
+<div id="modal">
+  <div class="modalOpen">
+    <div class="modalTitle">보건의료인 입장료 감면 이벤트!</div>
+    <div class="modalBody">
+    코로나19 진료를 위해 혼신의 힘을 다하고 있는 의료진을 격려하고자 입장료 감면 이벤트를 진행합니다.<br>
+    -이벤트기간<br>
+    -할인대상<br>
+    -할인율<br>
+    -할인대상임을 확인할 수 있는 서류를 꼭 지참해주세요!
+    </div>
+    <div class="btn">닫기</div>
+  </div>
+</div>
+
+<!-- footer 시작 -->
+<footer>
+  
+<div class="bottomLogo">
+    <a href="#"><img src="images/logo_bottom.png" alt="하단로고"></a>
+  </div>  
+  <div class="copyright">
+    COPYRIGHT by sky-observatory. ALL RIGHTS RESERVED
+  </div>
+  <div class="sns">
+    <ul>
+      <li><a href="#"><img src="images/youtube.png" alt="Youtube"></a></li>
+      <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+    </ul>
+  </div>
+
+</footer>
+<!--==== footer 끝 ====-->
 
 </body>
 </html>
+
